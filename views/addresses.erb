@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row bg-dark">
+    <div class="col-md-offset-4 col-md-4">
+      <h1 class="bg-primary text-center p25">
+        Distance from White House
+      </h1>
+    </div>
+  </div>
+
+    <table class='table table-hover table-striped'>
+      <th>Coordinates</th>
+      <th>Addresses</th>
+      <th>Distance in miles</th>
+      <% @params.keys.each do | k | %>
+        <tr>
+          <td><%= @params[k] %></td>
+          <td>address_placeholder</td>
+          <td>distance_placeholder</td>
+        </tr>
+      <% end %>
+
+
+    </table>
+<p><a href='/'>Home</a></p>
+</div>

@@ -1,9 +1,33 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row bg-dark">
     <div class="col-md-offset-4 col-md-4">
       <h1 class="bg-primary text-center p25">
-        Bootstrapped!
+        Address Lookup
       </h1>
     </div>
+  </div>
+
+  <div>
+    <p>Click the <i>View Addresses</i> button to convert the coordinates to addresses:</p>
+    <form action='/addresses' method='post'>
+      <p lat="61.582195" lng="-149.443512">61.582195, -149.443512</p>
+      <input type="hidden" name="coord1" value="61.582195,-149.443512" />
+
+      <p lat="44.775211" lng="-68.774184">44.775211, -68.774184</p>
+      <input type="hidden" name="coord2" value="44.775211, -68.774184" />
+
+      <p coord3="25.891297,-97.393349">25.891297, -97.393349</p>
+      <input type="hidden" name="coord3" value="25.891297, -97.393349" />
+
+      <p coord4="45.787839,-108.502110">45.787839, -108.502110</p>
+      <input type="hidden" name="coord4" value="45.787839, -108.502110" />
+
+      <p coord5="35.109937,-89.959983">35.109937, -89.959983</p>
+      <input type="hidden" name="coord5" value="35.109937, -89.959983" />
+
+
+
+      <button type='submit' class='btn btn-primary'>View Addresses</button>
+    </form>
   </div>
 </div>
