@@ -11,9 +11,9 @@
       <th>Coordinates</th>
       <th>Addresses</th>
       <th>Distance in miles</th>
-      <% @params.keys.each do | k | %>
+      <% coordinates.each do | obj | %>
         <tr>
-          <td><%= @params[k] %></td>
+          <td><%= obj.latitude %>, <%= obj.longitude %></td>
           <td>address_placeholder</td>
           <td>distance_placeholder</td>
         </tr>

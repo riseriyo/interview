@@ -1,26 +1,40 @@
 require 'sinatra/base'
+require 'active_record'
 Dir['./lib/*.rb'].each { |f| require f }
 
-#require 'yaml/store'
+enable :sessions
 
 class Main < Sinatra::Base
-
+  Coordinate.establish_connection(
+      :adapter => "sqlite3",
+      :database => "locations.db"
+  )
 
   get '/' do
-    erb :index #, locals: { address: address }
+
+    @addresses = []
+    @coordinates = Coordinate.all()
+    @coordinates.each do |obj|
+      puts obj.latitude, obj.longitude
+
+      #address = reverse_geocode(obj.latitude, obj.longitude) do
+      #@addresses <<
+    end
+
+    erb :index, locals: { coordinates: @coordinates } #, addresses: @addresses }
   end
 
-  post '/addresses' do
-    # {coordinate => [address,distance]}
-    @v = []
-    @params = params
+  get '/addresses' do
 
-    #params.keys.each do | k |
-      #puts k
-      #@result = Geocoder.reverse_geocode(@params[k])
-      #@v << @result
-    #end
-    erb :addresses
+    @coordinates = Coordinate.all()
+    @coordinates.each do |obj|
+      puts obj.latitude, obj.longitude
+
+      #address = reverse_geocode(obj.latitude, obj.longitude) do
+      #@addresses <<
+    end
+
+    erb :addresses, locals: { coordinates: @coordinates }
   end
 
 end

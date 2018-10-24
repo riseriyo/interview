@@ -9,7 +9,12 @@
 
   <div>
     <p>Click the <i>View Addresses</i> button to convert the coordinates to addresses:</p>
-    <form action='/addresses' method='post'>
+    <% coordinates.each do |obj| %>
+      <ul>
+        <li><%= obj.latitude %>, <%= obj.longitude %></li>
+      </ul>
+    <% end %>
+    <!--<form action='/addresses' method='post'>
       <p lat="61.582195" lng="-149.443512">61.582195, -149.443512</p>
       <input type="hidden" name="coord1" value="61.582195,-149.443512" />
 
@@ -23,11 +28,9 @@
       <input type="hidden" name="coord4" value="45.787839, -108.502110" />
 
       <p coord5="35.109937,-89.959983">35.109937, -89.959983</p>
-      <input type="hidden" name="coord5" value="35.109937, -89.959983" />
+      <input type="hidden" name="coord5" value="35.109937, -89.959983" />-->
 
+      <a href="/addresses" class="btn">View Addresses</a
 
-
-      <button type='submit' class='btn btn-primary'>View Addresses</button>
-    </form>
   </div>
 </div>

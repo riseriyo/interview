@@ -1,5 +1,13 @@
 /* custom CSS goes here */
 
 .p25 {
-    padding: 25px;
+    padding: 1em;
+    background-color: skyblue;
+}
+
+a.btn {
+    width: 10em;
+    padding: 1em;
+    font-palette: white;
+    background-color: skyblue;
 }
