@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
+gem 'sinatra-activerecord'
 gem 'sqlite3'
-gem 'activerecord'
 gem 'puma'
-gem 'geocoder'
+gem 'geocoder', github: 'alexreisner/geocoder'
 gem 'faker'
 gem 'factory_girl'
 gem 'pry-byebug'
