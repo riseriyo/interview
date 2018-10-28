@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a2d46bce-426b-4618-830a-7c044067a9a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/interview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/interview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/locations.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/locations.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/address.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/address.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/geocoding.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/geocoding.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locations.db" beforeDir="false" afterPath="$PROJECT_DIR$/locations.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/main.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/addresses.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/addresses.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.erb" afterDir="false" />
-    </list>
+    <list default="true" id="a2d46bce-426b-4618-830a-7c044067a9a2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +26,7 @@
     <session id="-1795308959">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="32" />
+          <entry key="project.closed" value="33" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -196,9 +183,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="56" />
-    <option name="y" value="108" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="64" />
+    <option name="y" value="66" />
     <option name="width" value="990" />
     <option name="height" value="759" />
   </component>
@@ -299,16 +286,15 @@
       <workItem from="1540744429679" duration="8525000" />
       <workItem from="1540753479450" duration="232000" />
       <workItem from="1540753734361" duration="7938000" />
-      <workItem from="1540763250782" duration="1680000" />
+      <workItem from="1540763250782" duration="1702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126372000" />
+    <option name="totallyTimeSpent" value="126394000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="108" width="990" height="759" extended-state="1" />
-    <editor active="true" />
+    <frame x="64" y="66" width="990" height="759" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
