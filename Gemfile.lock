@@ -25,6 +25,7 @@ GEM
     byebug (9.0.5)
     coderay (1.1.1)
     diff-lcs (1.2.5)
+    dotenv (2.5.0)
     factory_girl (4.7.0)
       activesupport (>= 3.0.0)
     faker (1.4.3)
@@ -75,6 +76,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   factory_girl
   faker
   geocoder!

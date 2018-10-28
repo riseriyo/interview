@@ -11,11 +11,11 @@
       <th>Coordinates</th>
       <th>Addresses</th>
       <th>Distance in miles</th>
-      <% coordinates.each do | obj | %>
+      <% addresses.each do |obj|%>
         <tr>
           <td><%= obj.latitude %>, <%= obj.longitude %></td>
-          <td><%= addresses %></td>
-          <td>distance_placeholder</td>
+          <td><%= results.address %></td>
+          <td><%= if obj.distance.nil? ? "n/a" : obj.distance %></td>
         </tr>
       <% end %>
 

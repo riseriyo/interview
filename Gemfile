@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'sinatra-activerecord'
+gem 'dotenv'
 gem 'sqlite3'
 gem 'puma'
 gem 'geocoder', github: 'alexreisner/geocoder'

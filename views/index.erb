@@ -8,29 +8,28 @@
   </div>
 
   <div>
-    <p>Click the <i>View Addresses</i> button to convert the coordinates to addresses:</p>
-    <% coordinates.each do |obj| %>
-      <ul>
-        <li><%= obj.latitude %>, <%= obj.longitude %></li>
-      </ul>
-    <% end %>
-    <!--<form action='/addresses' method='post'>
-      <p lat="61.582195" lng="-149.443512">61.582195, -149.443512</p>
-      <input type="hidden" name="coord1" value="61.582195,-149.443512" />
+    <p>
+      Click the <i>View Addresses</i> button to convert the coordinates to addresses<br  />
+      and find the distance from the target location (i.e., the White House) <br />
+      to each location.
+      <br /><br />
 
-      <p lat="44.775211" lng="-68.774184">44.775211, -68.774184</p>
-      <input type="hidden" name="coord2" value="44.775211, -68.774184" />
+      Target Location: <br />
+      <%= target %><br />
+    </p>
 
-      <p coord3="25.891297,-97.393349">25.891297, -97.393349</p>
-      <input type="hidden" name="coord3" value="25.891297, -97.393349" />
+    <table class='table table-hover table-striped'>
+      <th>Coordinates</th>
+      <% locations.each do |key, arr|%>
+        <tr>
+          <td><%= arr[0] %>, <%= arr[1] %></td>
+        </tr>
+      <% end %>
 
-      <p coord4="45.787839,-108.502110">45.787839, -108.502110</p>
-      <input type="hidden" name="coord4" value="45.787839, -108.502110" />
 
-      <p coord5="35.109937,-89.959983">35.109937, -89.959983</p>
-      <input type="hidden" name="coord5" value="35.109937, -89.959983" />-->
+    </table>
 
-      <a href="/addresses" class="btn">View Addresses</a
+    <a href="/addresses" class="btn">View Addresses</a>
 
   </div>
 </div>

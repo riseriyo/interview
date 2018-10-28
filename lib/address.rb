@@ -3,24 +3,28 @@ require_relative 'geocoding'
 class Address < ActiveRecord::Base
   extend ::Geocoder::Model::ActiveRecord
 
-  attr_accessor :latitude, :longitude, :full_address
+  # call geocode for address lookup and coordinates lookup
+  geocoded_by :address
+  reverse_geocoded_by :latitude, :longitude do |obj, results|
+    if geo = results.first
+      obj.id      = id
+      obj.street  = geo.address
+      obj.city    = geo.city
+      obj.state   = geo.state
+      obj.zipcode = geo.zipcode
+      obj.country = geo.country
+    end
+  end
 
-  # call geocode for address lookup
-  reverse_geocoded_by :latitude, :longitude
+  after_validation :geocode, :reverse_geocode #, :if => :address_changed?
 
-  #reverse_geocoded_by :latitude, :longitude, address: :full_address do |obj,results|
-  #  if geo = results.first
-  #    obj.street    = geo.address
-  #    obj.city      = geo.city
-  #    obj.state     = geo.state
-  #    obj.zipcode   = geo.postal_code
-  #    obj.country   = geo.country
-  #  end
-  #end
+  def address
+    [street,city,state,zipcode,country].join(',')
+  end
 
-  after_validation :reverse_geocode
+  def latitude
+  end
 
-  def reverse_geocoded_by
-    "#{street}, #{city}, #{state}, #{zipcode}, #{country}"
+  def longitude
   end
 end

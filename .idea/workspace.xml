@@ -7,11 +7,13 @@
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/locations.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/locations.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/address.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/address.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/coordinate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/coordinate.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/geocoding.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/geocoding.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locations.db" beforeDir="false" afterPath="$PROJECT_DIR$/locations.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.rb" beforeDir="false" afterPath="$PROJECT_DIR$/main.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/addresses.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/addresses.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.erb" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,59 +39,65 @@
     <session id="-1795308959">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.26" value="2" />
           <entry key="project.open.time.27" value="1" />
-          <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.29" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="10" />
+          <entry key="project.open.time.7" value="11" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Gemfile" value="6" />
+          <entry key="Gemfile" value="9" />
           <entry key="Rakefile" value="1" />
           <entry key="css" value="2" />
-          <entry key="csv" value="5" />
+          <entry key="csv" value="9" />
           <entry key="db" value="2" />
+          <entry key="env" value="4" />
           <entry key="erb" value="9" />
           <entry key="js" value="1" />
-          <entry key="rb" value="39" />
-          <entry key="ru" value="1" />
+          <entry key="rb" value="52" />
+          <entry key="ru" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="CSV" value="5" />
+          <entry key="CSV" value="9" />
           <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="RHTML" value="9" />
-          <entry key="Ruby" value="47" />
+          <entry key="Ruby" value="77" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Gemfile" value="103" />
+          <entry key="Gemfile" value="115" />
           <entry key="Rakefile" value="4" />
           <entry key="css" value="169" />
           <entry key="csv" value="270" />
-          <entry key="erb" value="1734" />
-          <entry key="rb" value="7116" />
-          <entry key="ru" value="74" />
+          <entry key="env" value="44" />
+          <entry key="erb" value="2716" />
+          <entry key="rb" value="15062" />
+          <entry key="ru" value="311" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="169" />
           <entry key="CSV" value="270" />
-          <entry key="RHTML" value="1734" />
-          <entry key="Ruby" value="7297" />
+          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="RHTML" value="2716" />
+          <entry key="Ruby" value="15492" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -99,47 +107,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.ru">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="705">
+              <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/coordinate.rb">
+        <entry file="file://$PROJECT_DIR$/config.ru">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="37" selection-start-column="37" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="25" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/addresses.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <caret selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -147,8 +128,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/address.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/addresses.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -156,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/geocoding.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -179,13 +178,14 @@
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/seeds/coordinates.csv" />
         <option value="$PROJECT_DIR$/public/style.css" />
-        <option value="$PROJECT_DIR$/views/index.erb" />
-        <option value="$PROJECT_DIR$/views/addresses.erb" />
-        <option value="$PROJECT_DIR$/lib/coordinate.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/lib/geocoding.rb" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config.ru" />
+        <option value="$PROJECT_DIR$/lib/coordinate.rb" />
+        <option value="$PROJECT_DIR$/views/addresses.erb" />
         <option value="$PROJECT_DIR$/lib/address.rb" />
+        <option value="$PROJECT_DIR$/views/index.erb" />
+        <option value="$PROJECT_DIR$/lib/geocoding.rb" />
         <option value="$PROJECT_DIR$/main.rb" />
       </list>
     </option>
@@ -196,17 +196,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="47" />
-    <option name="width" value="1120" />
-    <option name="height" value="755" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="56" />
+    <option name="y" value="108" />
+    <option name="width" value="990" />
+    <option name="height" value="759" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,33 +228,18 @@
             <path>
               <item name="interview" type="b2602c69:ProjectViewProjectNode" />
               <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
               <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interview" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interview" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/RubymineProjects/geoexample" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -293,18 +279,38 @@
       <workItem from="1540431398890" duration="5574000" />
       <workItem from="1540437009966" duration="1385000" />
       <workItem from="1540438427887" duration="1962000" />
-      <workItem from="1540440415931" duration="2200000" />
+      <workItem from="1540440415931" duration="2337000" />
+      <workItem from="1540443600160" duration="1991000" />
+      <workItem from="1540659384995" duration="2201000" />
+      <workItem from="1540677566266" duration="3129000" />
+      <workItem from="1540681946454" duration="4727000" />
+      <workItem from="1540686700889" duration="545000" />
+      <workItem from="1540688450957" duration="7505000" />
+      <workItem from="1540696088577" duration="608000" />
+      <workItem from="1540696719132" duration="881000" />
+      <workItem from="1540697618986" duration="2314000" />
+      <workItem from="1540699952543" duration="4456000" />
+      <workItem from="1540704438881" duration="2095000" />
+      <workItem from="1540706566508" duration="389000" />
+      <workItem from="1540706973485" duration="400000" />
+      <workItem from="1540707608948" duration="1400000" />
+      <workItem from="1540727752918" duration="6294000" />
+      <workItem from="1540734371269" duration="9760000" />
+      <workItem from="1540744429679" duration="8525000" />
+      <workItem from="1540753479450" duration="232000" />
+      <workItem from="1540753734361" duration="7938000" />
+      <workItem from="1540763250782" duration="1680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59165000" />
+    <option name="totallyTimeSpent" value="126372000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="47" width="1120" height="755" extended-state="0" />
+    <frame x="56" y="108" width="990" height="759" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2088015" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2185501" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,7 +331,7 @@
       <window_info anchor="right" id="Database" order="3" weight="0.32958803" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25925925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22761194" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -343,11 +349,14 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32958803" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -419,9 +428,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locations.db">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/locations.db" />
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/gems/geocoder-1.3.7/lib/geocoder/models/active_record.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -458,24 +465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seeds/coordinates.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/bundler/gems/geocoder-2e720f9bf03f/lib/geocoder/stores/active_record.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="314" column="8" selection-start-line="314" selection-start-column="8" selection-end-line="314" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="25" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -486,48 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/bundler/gems/geocoder-2e720f9bf03f/lib/geocoder/models/active_record.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/coordinate.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/geocoding.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/address.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/rubystubs23/array.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -535,17 +486,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/addresses.erb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/bundler/gems/geocoder-2e720f9bf03f/lib/geocoder/results/base.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        <state relative-caret-position="199">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/scoping/named.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/bundler/gems/geocoder-2e720f9bf03f/lib/geocoder/models/active_record.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.3.1/bundler/gems/geocoder-2e720f9bf03f/lib/geocoder/lookups/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds/coordinates.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/coordinate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/address.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/addresses.erb">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/geocoding.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
         </state>
       </provider>
     </entry>
