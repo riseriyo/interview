@@ -94,12 +94,7 @@ class Main < Sinatra::Base
 
     @whitehouse = Address.find(6)
     #binding.pry
-    @addresses = Address.all
-
-    @addresses.each do |obj|
-      puts obj.latitude
-      puts obj.longitude
-    end
+    @addresses = Address.all.order(:distance)
 
     erb :addresses, locals: { addresses: @addresses }
   end

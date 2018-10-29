@@ -14,10 +14,14 @@
       <% addresses.each do |obj|%>
         <tr>
           <td><%= obj.latitude %>, <%= obj.longitude %></td>
-          <td><%= obj.address %></td>
+          <td>
+            <%= obj.street %><br />
+            <%= obj.city %>, <%= obj.state %>
+            <%= obj.zipcode %>  <%= obj.country %>
+          </td>
           <td>
             <% if obj.distance.nil? %>
-              0
+              0.00
             <% else %>
               <%= obj.distance.round(2) %>
             <% end %>
