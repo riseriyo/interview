@@ -24,38 +24,51 @@ class Main < Sinatra::Base
 
   helpers do
     def geocoders( coord_dict )
-      coord_dict.each do |key, arr|
 
-        addr = Address.new(       id:        key,
-                                  street:    nil,
-                                  city:      nil,
-                                  state:     nil,
-                                  zipcode:   nil,
-                                  country:   nil,
-                                  latitude:  arr[0],
-                                  longitude: arr[1],
-                                  distance:  nil
-        )
-        if addr.valid?
-          p addr
-          addr.save!
-        end
-
-      end
-
-      addr = Address.new(      id:        6,
-                               street:    "1600 Pennsylvania Avenue",
-                               city:      "NW Washington",
-                               state:     "District of Columbia",
-                               zipcode:   "20500",
-                               country:   "United States",
-                               latitude:  nil,
-                               longitude: nil,
-                               distance:  nil
-      )
+      addr = Address::WithAddress.create(id:        6,
+                                        street:    "1600 Pennsylvania Avenue",
+                                        city:      "NW Washington",
+                                        state:     "District of Columbia",
+                                        zipcode:   "20500",
+                                        country:   "United States",
+                                        latitude:  nil,
+                                        longitude: nil,
+                                        distance:  nil
+            )
       if addr.valid?
         p addr
-        addr.save!
+        puts "WHITE HOUSE SAVED!!"
+      end
+      if addr.geocoded?
+        puts "WHITE HOUSE GEOCODED!!!"
+      end
+
+      coord_dict.each_with_index do |obj|
+        #binding.pry
+        addr = Address::WithLatLng.create(id:        obj[0],
+                                          street:    nil,
+                                          city:      nil,
+                                          state:     nil,
+                                          zipcode:   nil,
+                                          country:   nil,
+                                          latitude:  obj[1][0],
+                                          longitude: obj[1][1],
+                                          distance:  nil
+        )
+
+        if addr.valid?
+          p addr
+          puts "Address Saved!!!"
+        end
+
+        @whitehouse = Address.find(6)
+        distance = addr.distance_from([@whitehouse[:latitude], @whitehouse[:longitude]])
+
+        #binding.pry
+        puts ">>>>>>> #{distance} "
+        addr.distance = distance
+        addr.save
+
       end
     end
   end
@@ -66,24 +79,29 @@ class Main < Sinatra::Base
 
   get '/' do
 
-    target = "1600 Pennsylvania Avenue NW Washington, D.C. 20500"
+    target_text = "1600 Pennsylvania Avenue NW Washington, D.C. 20500"
 
     sleep(3.seconds)
-    erb :index, locals: { locations: COORD_DICT, target: target }
+    @whitehouse = Address.find(6)
+    erb :index, locals: { locations: COORD_DICT,
+                          target: @whitehouse.address,
+                          target_coord: @whitehouse}
     #binding.pry
 
   end
 
   get '/addresses' do
 
-    Address.where(:id => params[:id]).order("created_at DESC").offset(1).reverse
+    @whitehouse = Address.find(6)
+    #binding.pry
+    @addresses = Address.all
+
     @addresses.each do |obj|
       puts obj.latitude
       puts obj.longitude
     end
-    @results = Address.reverse_geocoded_by([61.582195],[-149.443512])
 
-    erb :addresses, locals: { addresses: @addresses, results: @results }
+    erb :addresses, locals: { addresses: @addresses }
   end
 
 end

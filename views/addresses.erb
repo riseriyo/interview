@@ -14,12 +14,17 @@
       <% addresses.each do |obj|%>
         <tr>
           <td><%= obj.latitude %>, <%= obj.longitude %></td>
-          <td><%= results.address %></td>
-          <td><%= if obj.distance.nil? ? "n/a" : obj.distance %></td>
+          <td><%= obj.address %></td>
+          <td>
+            <% if obj.distance.nil? %>
+              0
+            <% else %>
+              <%= obj.distance.round(2) %>
+            <% end %>
+          </td>
         </tr>
       <% end %>
 
 
     </table>
-<p><a href='/'>Home</a></p>
 </div>
